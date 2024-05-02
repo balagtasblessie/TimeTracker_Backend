@@ -8282,11 +8282,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Modernization\\Modernization_Backend\\backend_modernization\\ClockDB\\ClockDB.csproj",
+      "projectUniqueName": "D:\\Modernization\\backend_modernization\\ClockDB\\ClockDB.csproj",
       "projectName": "ClockDB",
-      "projectPath": "D:\\Modernization\\Modernization_Backend\\backend_modernization\\ClockDB\\ClockDB.csproj",
+      "projectPath": "D:\\Modernization\\backend_modernization\\ClockDB\\ClockDB.csproj",
       "packagesPath": "C:\\Users\\blessie.balagtas\\.nuget\\packages\\",
-      "outputPath": "D:\\Modernization\\Modernization_Backend\\backend_modernization\\ClockDB\\obj\\",
+      "outputPath": "D:\\Modernization\\backend_modernization\\ClockDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\blessie.balagtas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8303,8 +8303,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Modernization\\Modernization_Backend\\backend_modernization\\ClockDB_Service\\ClockDB_Service.csproj": {
-              "projectPath": "D:\\Modernization\\Modernization_Backend\\backend_modernization\\ClockDB_Service\\ClockDB_Service.csproj"
+            "D:\\Modernization\\backend_modernization\\ClockDB_Service\\ClockDB_Service.csproj": {
+              "projectPath": "D:\\Modernization\\backend_modernization\\ClockDB_Service\\ClockDB_Service.csproj"
             }
           }
         }
