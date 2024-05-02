@@ -30,7 +30,7 @@ namespace ClockDB.Controllers
 
         // GET: api/TimeLogs/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TimeLogs>> GetTimeLogs(Guid id)
+        public async Task<ActionResult<TimeLogs>> GetTimeLogs(int id)
         {
             var timeLogs = await _context.TimeLogs.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace ClockDB.Controllers
         // PUT: api/TimeLogs/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTimeLogs(Guid id, TimeLogs timeLogs)
+        public async Task<IActionResult> PutTimeLogs(int id, TimeLogs timeLogs)
         {
             if (id != timeLogs.TimeLogsId)
             {
@@ -86,7 +86,7 @@ namespace ClockDB.Controllers
 
         // DELETE: api/TimeLogs/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTimeLogs(Guid id)
+        public async Task<IActionResult> DeleteTimeLogs(int id)
         {
             var timeLogs = await _context.TimeLogs.FindAsync(id);
             if (timeLogs == null)
@@ -100,7 +100,7 @@ namespace ClockDB.Controllers
             return NoContent();
         }
 
-        private bool TimeLogsExists(Guid id)
+        private bool TimeLogsExists(int id)
         {
             return _context.TimeLogs.Any(e => e.TimeLogsId == id);
         }

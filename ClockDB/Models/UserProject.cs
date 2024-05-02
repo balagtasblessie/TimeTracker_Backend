@@ -2,10 +2,10 @@
 {   
     public class UserProject
     {
-        public Guid UserProjectID { get; set; }
-        public Guid UserID { get; set; }
-        public Guid ProjectId {  get; set; }
+        public int id { get; set; }
+        public int user_id { get; set; }
+        public int project_id {  get; set; }
         public DateTime DateStarted { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime DateEnded { get; set; }
     }
 }
