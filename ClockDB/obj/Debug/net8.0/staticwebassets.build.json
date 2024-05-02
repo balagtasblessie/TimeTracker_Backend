@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "Acax/mDL1tgPSetfHLW0ZukSRGZZLnKXVE3y+2s155s=",
+  "Hash": "mi1OrX8AQVR2h4R6r9jbv03okqj17FEaB9nuPYl6nQU=",
   "Source": "ClockDB",
   "BasePath": "_content/ClockDB",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "D:\\Modernization\\Modernization_Backend\\backend_modernization\\ClockDB_Service\\ClockDB_Service.csproj",
+      "Identity": "D:\\Modernization\\backend_modernization\\ClockDB_Service\\ClockDB_Service.csproj",
       "Version": 2,
       "Source": "ClockDB_Service",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
