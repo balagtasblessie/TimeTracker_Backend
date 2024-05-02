@@ -33,7 +33,7 @@ namespace ClockDB.Controllers
 
         // GET: api/UserProjects/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserProject>> GetUserProject(Guid id)
+        public async Task<ActionResult<UserProject>> GetUserProject(int id)
         {
             var userProject = await _context.UserProject.FindAsync(id);
 
@@ -48,9 +48,9 @@ namespace ClockDB.Controllers
         // PUT: api/UserProjects/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUserProject(Guid id, UserProject userProject)
+        public async Task<IActionResult> PutUserProject(int id, UserProject userProject)
         {
-            if (id != userProject.UserProjectID)
+            if (id != userProject.id)
             {
                 return BadRequest();
             }
@@ -84,12 +84,12 @@ namespace ClockDB.Controllers
             _context.UserProject.Add(userProject);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUserProject", new { id = userProject.UserProjectID }, userProject);
+            return CreatedAtAction("GetUserProject", new { id = userProject.id }, userProject);
         }
 
         // DELETE: api/UserProjects/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUserProject(Guid id)
+        public async Task<IActionResult> DeleteUserProject(int id)
         {
             var userProject = await _context.UserProject.FindAsync(id);
             if (userProject == null)
@@ -103,9 +103,9 @@ namespace ClockDB.Controllers
             return NoContent();
         }
 
-        private bool UserProjectExists(Guid id)
+        private bool UserProjectExists(int id)
         {
-            return _context.UserProject.Any(e => e.UserProjectID == id);
+            return _context.UserProject.Any(e => e.id == id);
         }
     }
 }
